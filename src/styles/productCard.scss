@@ -1,0 +1,52 @@
+.productCard {
+    background-color: $tertiary;
+    width: 300px;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    > img {
+        width: 100%;
+        aspect-ratio : 1 / 1;
+        object-fit: contain;
+    }
+
+    > p {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    > h4 {
+        margin: 1rem;
+    }
+
+    > button {
+        cursor: pointer;
+        border: 2px solid $tertiary;
+        background-color: $secondary;
+        padding: 1rem;
+        color: $tertiary;
+        border-radius: 5px;
+        transition: all 0.5s;
+        font-weight: 500;
+        width: 100%;
+
+        &:hover {
+            background-color: $secondarydark;
+        }
+    }
+
+    &:hover {
+        background-color: $secondarydark;
+        transform: scale(1.05);
+    }
+}
